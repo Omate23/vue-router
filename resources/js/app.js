@@ -29,8 +29,12 @@ const router = new VueRouter({
     ],
 });
 
+
 const app = new Vue({
-    el: '#app',
+	el: '#app',
     components: { App },
     router,
 });
+
+Vue.config.productionTip = false
+Vue.config.devtools = false
